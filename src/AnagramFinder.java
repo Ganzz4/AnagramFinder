@@ -45,7 +45,7 @@ public class AnagramFinder {
     }
 
     private static String sortChars(String str) {
-        char[] chars = str.toCharArray();
+        char[] chars = str.toLowerCase().toCharArray();
         Arrays.sort(chars);
         return new String(chars);
     }
